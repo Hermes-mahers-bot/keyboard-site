@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Magnetic switch &middot; Keyboard</title>
+<meta name="description" content="No contact inside. A magnet moves and a sensor reads exactly how far down the key is.">
+<link rel="icon" href="../assets/k/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/k/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-in">
+    <a class="brand" href="../index.html">
+      <img src="../assets/k/mark.png" alt="" width="30" height="26">
+      <span>Keyboard</span>
+    </a>
+    <span class="nav-sp"></span>
+    <a class="lnk" href="../index.html#types">The five types</a>
+  </div>
+</nav>
+<header class="tp-head">
+  <div class="tp-top">
+    <div>
+      <p class="crumbs"><a href="../index.html">All keyboards</a> &rsaquo; Magnetic switch</p>
+      <h1>Magnetic switch</h1>
+      <p class="lede">No contacts at all. A magnet moves inside the switch and a sensor reads where it is, so the keyboard knows the position of every key continuously.</p>
+    </div>
+    <img src="../assets/img/magnetic.jpg" width="900" height="620" alt="Magnetic switch keyboard with black keycaps and a wood frame">
+  </div>
+</header>
+
+<main class="tp-body">
+  <div class="wrap">
+
+    <section class="sect">
+      <h2>How it works</h2>
+      <p>There is a small magnet on the stem and a Hall-effect sensor on the board below it. Press the key and the magnet moves closer. The sensor reads the magnetic field and turns it into a position, continuously, rather than a single on or off.</p>
+      <p>Because the position is a number, the actuation point is set in firmware rather than fixed in the switch. A key can be told to register at 0.1&nbsp;mm or at 4&nbsp;mm, per key, from software.</p>
+      <p>Nothing touches, so there is no contact wear and no debounce delay. It also allows rapid trigger: the key resets the moment it starts moving back up instead of waiting to pass a fixed point, so a fast double press reads as two presses.</p>
+      <p>Some boards read the keys up to 8000 times per second, which is one reading every 0.125&nbsp;ms. All of it happens inside the keyboard, so it works with any computer.</p>
+    </section>
+
+    <section class="sect">
+      <h2>The numbers</h2>
+      <p>Typical figures for this type. Exact values vary by switch and by board.</p>
+      <dl class="spec">
+      <div><dt>Sensing</dt><dd>Hall effect or TMR; the magnet never touches a contact</dd></div>
+      <div><dt>Total travel</dt><dd>Usually 3.4 to 4.0&nbsp;mm</dd></div>
+      <div><dt>Actuation point</dt><dd>Adjustable, typically 0.1 to 4.0&nbsp;mm</dd></div>
+      <div><dt>Rapid trigger</dt><dd>Per key; sensitivity down to 0.01&nbsp;mm on some boards</dd></div>
+      <div><dt>Polling</dt><dd>1000&nbsp;Hz standard, up to 8000&nbsp;Hz (0.125&nbsp;ms)</dd></div>
+      <div><dt>Rated life</dt><dd>No contact wear, so the spring and stem set the limit</dd></div>
+      <div><dt>Sound</dt><dd>Mechanical feel; the switch and case set the sound</dd></div>
+      </dl>
+    </section>
+
+    <section class="sect">
+      <h2>Who it suits</h2>
+      <div class="cols">
+        <div>
+          <h4>Good for</h4>
+          <ul>
+          <li>Setting your own actuation point</li>
+          <li>Fast repeated presses</li>
+          <li>Avoiding contact wear</li>
+          <li>A keyboard that can be reconfigured</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Less good for</h4>
+          <ul>
+          <li>A fixed, purely mechanical feel</li>
+          <li>Boards that need no software at all</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<div class="pager">
+  <a href="scissor-switch.html"><span class="k">Previous type</span><span class="t">&lsaquo; Scissor switch</span></a>
+  <a href="mechanical.html" style="text-align:right"><span class="k">Next type</span><span class="t">Mechanical &rsaquo;</span></a>
+</div>
+
+<footer class="foot">
+  <div class="foot-in">
+    <a class="brand" href="../index.html">
+      <img src="../assets/k/mark.png" alt="" width="23" height="20">
+      <span>Keyboard</span>
+    </a>
+    <div class="foot-links">
+      <a href="../types/mechanical.html">Mechanical</a>
+      <a href="../types/normal-profile.html">Normal profile</a>
+      <a href="../types/low-profile.html">Low profile</a>
+      <a href="../types/scissor-switch.html">Scissor switch</a>
+      <a href="../types/magnetic-switch.html">Magnetic switch</a>
+    </div>
+    <span>keyboard.aimaher.com</span>
+  </div>
+</footer>
+</body>
+</html>
